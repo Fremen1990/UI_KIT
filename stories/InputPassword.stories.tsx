@@ -1,11 +1,12 @@
 import React from 'react';
 import {Meta, Story} from '@storybook/react';
-import {Button, Props} from '../src/Button'
+import {InputPassword, Props} from '../src/InputPassword'
 import {action} from '@storybook/addon-actions'
 
+
 const meta: Meta={
-	title: 'Button',
-	component: Button,
+	title: 'InputPassword',
+	component: InputPassword,
 	argTypes:{
 		onClick:{action:"clicked"},
 		children: {
@@ -16,7 +17,7 @@ const meta: Meta={
 
 export default  meta;
 
-const Template: Story<Props> = (args) => <Button {...args}/>
+const Template: Story<Props> = (args) => <InputPassword {...args}/>
 
 export const Default = Template.bind({})
 export const Secondary = Template.bind({})
@@ -29,6 +30,6 @@ Default.args= {
 
 Secondary.args= {
 	variant:'secondary',
-	children: "I am secondary Button!",
+	children: "I am secondary Input!",
 	onClick: action('secondary click')
 }

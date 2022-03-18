@@ -1,11 +1,14 @@
 import React, {HTMLAttributes, ReactNode} from 'react';
 
 export interface Props extends HTMLAttributes<HTMLButtonElement> {
+	/** Provide a text for a button */
 	children: ReactNode;
+
+	/** Which variant would you like to use*/
 	variant: 'primary' | 'secondary';
 }
 
-
+/** This is special button */
 export const Button = ({children, variant='primary', ...props}: Props) => {
 	return (
 		<div style={{height:'auto', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
@@ -25,5 +28,3 @@ export const Button = ({children, variant='primary', ...props}: Props) => {
 
 	);
 };
-
-export default Button;
