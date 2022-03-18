@@ -29,11 +29,12 @@ export const Bulb = ({children, variant = 'primary', ...props}: Props) => {
 
 				<GoLightBulb style={{fontSize: "150px"}}/>
 
-				<div className="buttons">
+				<div className="buttons" style={{display: 'flex'}}>
 
-					<button>Red</button>
-					<button>Green</button>
-					<button>Blue</button>
+					<button style={{padding:"10px", margin:"10px"}}>Red</button>
+					<button style={{padding:"10px", margin:"10px"}}>Green</button>
+					<button style={{padding:"10px", margin:"10px"}}>Blue</button>
+
 				</div>
 			</div>
 		</>
