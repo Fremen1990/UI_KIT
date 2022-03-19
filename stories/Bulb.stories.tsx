@@ -29,7 +29,7 @@ Default.args= {
 
 
 Secondary.args= {
-	variant:'secondary',
+	// variant:'secondary',
 	children: "I am secondary Bulb!",
 	onClick: action('secondary click')
 }

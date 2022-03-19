@@ -1,7 +1,5 @@
 import React, {HTMLAttributes, ReactNode, useState} from 'react';
 
-import './bulb.css'
-
 import {GoLightBulb} from "react-icons/go";
 import {Button} from "./Button";
 
@@ -9,32 +7,55 @@ import {Button} from "./Button";
 export interface Props extends HTMLAttributes<HTMLButtonElement> {
 	/** Provide a text for a button */
 	children: ReactNode;
-
-	/** Which variant would you like to use*/
-	variant: 'primary' | 'secondary';
 }
 
 /** This is special bulb */
-export const Bulb = ({children, variant = 'primary'}: Props) => {
+export const Bulb = ({children}: Props) => {
 
 	const [bulbColor, setBulbColor]=useState("gray")
-	const changeColor= (button)=>{
+	const changeColor= (button: any)=>{
 		const color= button.target.id;
 	setBulbColor(color)
 	}
 
 	return (
 		<>
-			<div className="container" >
+			<div style={{
+				margin:0,
+				padding:0,
+				height:"100vh",
+				display:"flex",
+				flexDirection: "column",
+				justifyContent: "center",
+				alignItems: "center"
+			}} >
 				<div className="bulb-color" style={{padding:"5vw", backgroundColor:bulbColor, border:"4px solid black", borderRadius:20}}>
 					<GoLightBulb style={{fontSize: "150px", backgroundColor:bulbColor}}/>
+					{children }
 				</div>
-				<div className="buttons-color" >
-					<Button id="red" className="single-button" variant="danger" onClick={changeColor}>Red</Button>
-					<Button id="green" className="single-button" variant="success" onClick={changeColor}>Green</Button>
-					<Button id="blue" className="single-button" variant="primary" onClick={changeColor}>Blue</Button>
+				<div className="buttons-color"
+				style={{
+					margin:25,
+					display:"flex",
+					flexDirection: "row"
+				}}
+
+				>
+					<Button id="red" style={{
+						margin:10,
+						fontSize:20
+					}} variant="danger" onClick={changeColor}>Red</Button>
+					<Button id="green" style={{
+						margin:10,
+						fontSize:20
+					}} variant="success" onClick={changeColor}>Green</Button>
+					<Button id="blue" style={{
+						margin:10,
+						fontSize:20
+					}} variant="primary" onClick={changeColor}>Blue</Button>
 				</div>
 			</div>
 		</>
 	);
 };
+
