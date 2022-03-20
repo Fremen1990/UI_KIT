@@ -6,11 +6,16 @@ module.exports = {
 		'@storybook/addon-links',
 		'@storybook/addon-essentials',
 		'@storybook/addon-a11y',
-		'@storybook/preset-scss',
 		'storybook-dark-mode'
+
+
+
+
+
 		// '@storybook/addon-actions',
 		// '@storybook/addon-docs',
 		// '@storybook/preset-create-react-app'
+		// '@storybook/preset-scss',
 
 		// these addons not working
 		// '@storybook/addon-info',
