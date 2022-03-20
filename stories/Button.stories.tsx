@@ -1,10 +1,10 @@
 import React from 'react';
 import {Meta, Story} from '@storybook/react';
-import {Button, Props} from '../src/Button'
+import {Button, Props} from '../src/components/Button'
 import {action} from '@storybook/addon-actions'
 
 const meta: Meta={
-	title: 'Button',
+	title: 'Form/Buttons/Button',
 	component: Button,
 	argTypes:{
 		onClick:{action:"clicked"},

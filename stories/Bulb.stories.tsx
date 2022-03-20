@@ -1,6 +1,6 @@
 import React from 'react';
 import {Meta, Story} from '@storybook/react';
-import {Bulb, Props} from '../src/Bulb'
+import {Bulb, Props} from '../src/components/Bulb'
 import {action} from '@storybook/addon-actions'
 
 

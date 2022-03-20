@@ -1,6 +1,6 @@
 import React from 'react';
 import {Meta, Story} from '@storybook/react';
-import {ProgressBar, Props} from '../src/ProgressBar'
+import {ProgressBar, Props} from '../src/components/ProgressBar'
 import {action} from '@storybook/addon-actions'
 
 
