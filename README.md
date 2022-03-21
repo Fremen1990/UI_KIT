@@ -1,4 +1,4 @@
-# 😎 UI KIT Storybook DevThomas
+# 🧐UI KIT Storybook DevThomas🤖
 
 ### UI KIT with use of Storybook for React components, views and pages
 
