@@ -27,7 +27,7 @@ const Template: ComponentStory<typeof ButtonTest> = (args:any) => <ButtonTest {.
 export const PrimaryArgs = Template.bind({})
 PrimaryArgs.args = {
 	variant:'primary',
-	// children:'Primary Args'
+	children:'Primary Args'
 }
 export const SecondaryArgs = Template.bind({})
 SecondaryArgs.args={

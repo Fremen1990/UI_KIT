@@ -1,5 +1,5 @@
 import React from 'react'
-import {Primary} from '../ButtonTest/ButtonTest.stories'
+import {PrimaryArgs} from '../ButtonTest/ButtonTest.stories'
 import {Large} from '../InputsTest/InputTest.stories'
 
 export default {
@@ -9,6 +9,6 @@ export default {
 export const PrimarySubscription = () => (
 	<>
 		<Large/>
-		<Primary/>
+		<PrimaryArgs variant='primary'>Subscribe</PrimaryArgs>
 	</>
 )
