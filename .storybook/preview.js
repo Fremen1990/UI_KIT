@@ -1,9 +1,16 @@
+import React from 'react'
+import '@storybook/addon-console'
 import {
 	create
 	// themes
 } from '@storybook/theming';
 
-import React from 'react'
+
+// config.js for addons-console
+import { addDecorator } from '@storybook/react';
+import { withConsole } from '@storybook/addon-console';
+
+addDecorator((storyFn, context) => withConsole()(storyFn)(context));
 
 // ------------------------------------------------------
 // Global decorator "Center"  to center all elements in all stories
@@ -67,6 +74,12 @@ export const parameters = {
 		//Option do sort stories alphabetically
 		storySort: (a, b) =>
 			a[1].kind === b[1].kind ? 0 : a[1].id.localeCompare(b[1].id, undefined, {numeric: true}),
+	},
+	controls: {
+		matchers: {
+			color: /(background|color)$/i,
+			date: /Date$/,
+		},
 	},
 	// Dark mode addon configuration
 	darkMode: {

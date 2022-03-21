@@ -1,0 +1,65 @@
+.wrapper {
+    font-family: "Ubuntu", sans-serif;
+    width: 100%;
+    padding-bottom:2vh;
+    padding-top:2vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bars {
+    text-align: center;
+    width: 100%;
+    padding: 0 4vw;
+}
+
+.bar-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.bar {
+    background: #282828;
+}
+
+.bar-per {
+    position: relative;
+    animation: fillBars 2.5s 1;
+}
+
+.bar-per::before {
+    color:#282828;
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background: #f1f1f1;
+    border-radius: 4px;
+    font-size: 12px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+
+.bar-per::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f1f1f1;
+    top: -20px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+}
+
+@keyframes fillBars {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+

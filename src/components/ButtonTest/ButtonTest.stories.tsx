@@ -12,8 +12,9 @@ export default {
 	component:ButtonTest,
 	// decorators:[story=> <Center>{story()}</Center>],
 	args: {
-		children: 'ButtonTest'
-	}
+		disabled:false
+	},
+
 } as ComponentMeta<typeof ButtonTest>;
 
 // export const Primary = ()=> <ButtonTest variant='primary'>Primary</ButtonTest>
@@ -22,12 +23,14 @@ export default {
 // export const Danger = ()=> <ButtonTest variant='danger'>Danger</ButtonTest>
 
 
-const Template: ComponentStory<typeof ButtonTest> = (args:any) => <ButtonTest {...args}/>
+const Template: ComponentStory<typeof ButtonTest> = (args:any) => <ButtonTest {...args}>{args.children}</ButtonTest>
 
 export const PrimaryArgs = Template.bind({})
 PrimaryArgs.args = {
 	variant:'primary',
-	children:'Primary Args'
+	children: 'Button label',
+
+	// children:'Primary Args',
 }
 export const SecondaryArgs = Template.bind({})
 SecondaryArgs.args={
