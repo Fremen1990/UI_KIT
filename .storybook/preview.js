@@ -43,7 +43,7 @@ const lightTheme = create({
 	appBg:'white',
 	colorPrimary: '#FF8C69',
 	colorSecondary: '#FF8C69',
-	brandImage:'https://www.devthomas.pl/static/media/TS.471bb4f7.webp'
+	brandImage: ''
 })
 
 const darkTheme = create({
