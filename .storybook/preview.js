@@ -39,23 +39,23 @@ export const decorators = [
 
 
 const lightTheme = create({
-	base:'light',
-	appBg:'white',
+	base: 'light',
+	appBg: 'white',
 	colorPrimary: '#FF8C69',
 	colorSecondary: '#FF8C69',
-	brandImage: ''
+	brandImage: 'https://raw.githubusercontent.com/Fremen1990/UI_KIT/8d061e86ea2da04d602b6e6053be6838a1e661d6/src/components/LogoDevthomas/LogoDevthomasOrange.webp'
 })
 
 const darkTheme = create({
-	base:'dark',
-	appBg:'#333940',
+	base: 'dark',
+	appBg: '#333940',
 	// appBg:"#707780",
 	colorPrimary: '#DBF785',
 	colorSecondary: '#637d0c',
-	appContentBg:'rgb(51,57,64)',
+	appContentBg: 'rgb(51,57,64)',
 	// appContentBg:"#707780",
-	barBg:'#29292a',
-	brandImage:'https://www.devthomas.pl/static/media/TS.471bb4f7.webp'
+	barBg: '#29292a',
+	brandImage: 'https://raw.githubusercontent.com/Fremen1990/UI_KIT/8d061e86ea2da04d602b6e6053be6838a1e661d6/src/components/LogoDevthomas/LogoDevthomas-light.webp'
 })
 
 

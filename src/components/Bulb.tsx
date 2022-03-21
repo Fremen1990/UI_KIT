@@ -20,16 +20,9 @@ export const Bulb = ({children}: Props) => {
 
 	return (
 		<>
-			<div style={{
-				margin:0,
-				padding:0,
-				height:"100vh",
-				display:"flex",
-				flexDirection: "column",
-				justifyContent: "center",
-				alignItems: "center"
-			}} >
-				<div className="bulb-color" style={{padding:"5vw", backgroundColor:bulbColor, border:"4px solid black", borderRadius:20}}>
+
+				<div className="bulb-color" style={{padding:"2vw", backgroundColor:bulbColor, border:"4px solid" +
+						" black", borderRadius:20}}>
 					<GoLightBulb style={{fontSize: "150px", backgroundColor:bulbColor}}/>
 					{children }
 				</div>
@@ -54,7 +47,6 @@ export const Bulb = ({children}: Props) => {
 						fontSize:20
 					}} variant="primary" onClick={changeColor}>Blue</Button>
 				</div>
-			</div>
 		</>
 	);
 };

@@ -1,11 +1,25 @@
 import React from 'react';
-import {Button} from '@chakra-ui/core'
+import {Button, Props} from '@chakra-ui/core'
+import {Story} from "@storybook/react";
 
 export default {
 	title: 'Chakra/Button',
-	component:Button
+	component:Button,
+	argTypes:{
+		onClick:{action:'clicked'}
+	}
 }
 
+const Template:Story<Props> = args => <Button {...args} />
 
-export const Success = () => <Button variantColor="green">Success</Button>
-export const Danger = () => <Button variantColor="red">Danger</Button>
+export const Success = Template.bind({})
+Success.args={
+	variantColor:"green",
+	children:"Success",
+}
+
+export const Danger = Template.bind({})
+Danger.args={
+	variantColor:"red",
+	children:"Danger",
+}
