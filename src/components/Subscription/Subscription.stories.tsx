@@ -8,7 +8,7 @@ export default {
 
 export const PrimarySubscription = () => (
 	<>
-		<Large/>
+		<Large size="large"/>
 		<PrimaryArgs variant='primary'>Subscribe</PrimaryArgs>
 	</>
 )
